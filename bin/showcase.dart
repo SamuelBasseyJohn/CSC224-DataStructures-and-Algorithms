@@ -1,4 +1,4 @@
-import '../lib/singly_linked_list.dart';
+import 'package:dsa_implementations/singly_linked_list.dart';
 
 void main(List<String> arguments) {
   LinkedList<String> members = LinkedList();
