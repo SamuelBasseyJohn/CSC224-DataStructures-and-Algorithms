@@ -1,8 +1,9 @@
-class Stack<T> {
+// Array Implementation
+class StackArr<T> {
   final List<T?> _container;
   int _top = -1;
 
-  Stack(int size) : _container = List.filled(size, null);
+  StackArr(int size) : _container = List.filled(size, null);
 
   void push(T item) {
     if (_top < _container.length - 1) {

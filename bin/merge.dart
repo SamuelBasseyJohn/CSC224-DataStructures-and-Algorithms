@@ -1,7 +1,7 @@
 import 'package:dsa_implementations/stack.dart';
 
 void main(List<String> args) {
-  var pages = Stack<String>(5);
+  var pages = StackArr<String>(5);
   print(pages);
   print(pages.length());
   pages.push("Page 1");
