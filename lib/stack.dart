@@ -1,4 +1,6 @@
 // Array Implementation
+import 'dart:io';
+
 class StackArr<T> {
   final List<T?> _container;
   int _top = -1;
@@ -10,16 +12,20 @@ class StackArr<T> {
       _top++;
       _container[_top] = item;
     } else {
+      print("Stack Overflow");
       throw StackOverflowError();
     }
   }
 
-  void pop() {
+  T? pop() {
     if (_top > -1) {
+      T? value = _container[_top];
       _container[_top] = null;
       _top--;
+      return value;
     } else {
-      return;
+      print("Stack Underflow");
+      exit(1);
     }
   }
 
